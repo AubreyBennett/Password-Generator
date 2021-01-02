@@ -15,26 +15,17 @@ generateBtn.addEventListener("click", writePassword);
 
 
 
-
-
-
-
-
-
-
-
-
-
-const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-
-
-for (var i = 0; i < arr.length; i++) {
-  console.log(arr[i]);
-}
-
-
 var length = prompt('Enter the length of the password');
 console.log(length);
 
 var specialAllowed = confirm('Do you want special characters in your password?');
 console.log(specialAllowed);
+
+var lowerAllowed = confirm('Do you want lowercase characters in your password?');
+console.log(lowerAllowed);
+
+var upperAllowed = confirm('Do you want uppercase characters in your password?');
+console.log(upperAllowed);
+
+var numberAllowed = confirm('Do you want numbers in your password?');
+console.log(numberAllowed);
