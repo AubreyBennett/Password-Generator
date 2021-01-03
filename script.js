@@ -7,19 +7,23 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
 }
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-
-
 var length = prompt('Enter the length of the password');
 console.log(length);
 
-var specialAllowed = confirm('Do you want special characters in your password?');
-console.log(specialAllowed);
+if (length < 8 || length > 128) {
+  alert('The length is invalid.');
+}
+else {
+  var specialAllowed = confirm('Do you want special characters in your password?');
+  console.log(specialAllowed);
+}
+
+
 
 var lowerAllowed = confirm('Do you want lowercase characters in your password?');
 console.log(lowerAllowed);
