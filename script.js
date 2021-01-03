@@ -23,13 +23,15 @@ else {
   console.log(specialAllowed);
 }
 
-
-
-var lowerAllowed = confirm('Do you want lowercase characters in your password?');
-console.log(lowerAllowed);
-
-var upperAllowed = confirm('Do you want uppercase characters in your password?');
-console.log(upperAllowed);
-
-var numberAllowed = confirm('Do you want numbers in your password?');
-console.log(numberAllowed);
+if (length && specialAllowed){
+  var lowerAllowed = confirm('Do you want lowercase characters in your password?');
+  console.log(lowerAllowed);
+}
+else{
+  var upperAllowed = confirm('Do you want uppercase characters in your password?');
+  console.log(upperAllowed);
+}
+if (length && specialAllowed && upperAllowed){
+  var numberAllowed = confirm('Do you want numbers in your password?');
+  console.log(numberAllowed);
+}
