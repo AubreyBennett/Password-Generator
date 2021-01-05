@@ -53,6 +53,13 @@ else {
     combined = combined.concat(specialAllowed);
   }
 
+  var lower = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+  var lowerAllowed = confirm('Do you want lowercase in your password?');
+
+  if (lowerAllowed) {
+    combined = combined.concat(lowerAllowed)
+  }
+
   var random = Math.floor(Math.random() * combined.length);
   console.log(combined[random]);
 }
