@@ -57,7 +57,14 @@ else {
   var lowerAllowed = confirm('Do you want lowercase in your password?');
 
   if (lowerAllowed) {
-    combined = combined.concat(lowerAllowed)
+    combined = combined.concat(lowerAllowed);
+  }
+
+  var upper = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+  var upperAllowed = confirm('Do you want uppercase characters in your password?');
+
+  if (upperAllowed) {
+    combined = combined.concat(upperAllowed);
   }
 
   var random = Math.floor(Math.random() * combined.length);
