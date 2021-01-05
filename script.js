@@ -55,6 +55,7 @@ else {
 
   var lower = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
   var lowerAllowed = confirm('Do you want lowercase in your password?');
+  console.log(lowerAllowed);
 
   if (lowerAllowed) {
     combined = combined.concat(lowerAllowed);
@@ -62,6 +63,7 @@ else {
 
   var upper = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
   var upperAllowed = confirm('Do you want uppercase characters in your password?');
+  console.log(upperAllowed);
 
   if (upperAllowed) {
     combined = combined.concat(upperAllowed);
