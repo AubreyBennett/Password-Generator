@@ -29,6 +29,7 @@ function writePassword() {
 }
 
 var length = prompt('Enter the length of the password');
+console.log("Length: ");
 console.log(length);
 
 if (length < 8 || length > 128) {
@@ -39,6 +40,7 @@ else {
 
   var special = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", "+", "=", "-", "<", ">", "?", ":"]
   var specialAllowed = confirm('Do you want special characters in your password?');
+  console.log("Special characters: ");
   console.log(specialAllowed);
 
   if (specialAllowed) {
@@ -47,6 +49,7 @@ else {
 
   var number = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
   var numberAllowed = confirm('Do you want numbers in your password?');
+  console.log("Numbers: ");
   console.log(numberAllowed);
 
   if (numberAllowed) {
@@ -55,6 +58,7 @@ else {
 
   var lower = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
   var lowerAllowed = confirm('Do you want lowercase in your password?');
+  console.log("Lowercase characters: ");
   console.log(lowerAllowed);
 
   if (lowerAllowed) {
@@ -63,6 +67,7 @@ else {
 
   var upper = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
   var upperAllowed = confirm('Do you want uppercase characters in your password?');
+  console.log("Uppercase characters: ");
   console.log(upperAllowed);
 
   if (upperAllowed) {
