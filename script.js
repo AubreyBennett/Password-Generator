@@ -1,4 +1,3 @@
-// Assignment Code
 var length;
 var specialAllowed;
 var lowerAllowed;
@@ -15,12 +14,9 @@ number = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 
 var generateBtn = document.querySelector("#generate");
 
-// Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-// Write password to the #password input
 function writePassword() {
-  // something not defined in the line below???????????????
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
@@ -78,14 +74,4 @@ function generatePassword() {
       }
       return password;
   }
-
 }
-
-
-
-
-
-
-
-
-
